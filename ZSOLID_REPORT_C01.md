@@ -44,16 +44,16 @@ CLASS lcl_reporter IMPLEMENTATION.
     return_object = local_class_object. 
   ENDMETHOD. 
 
-  METHOD if_reporter~at_selection_screen. 
+  METHOD at_selection_screen. 
 
   ENDMETHOD. 
 
-  METHOD if_reporter~get_data. 
+  METHOD get_data. 
 
   ENDMETHOD. 
 
-  METHOD if_reporter~get_screen. 
-    me->list_data( ). 
+  METHOD get_screen. 
+    list_data( ). 
   ENDMETHOD. 
 
   METHOD edit_fcat. 
@@ -129,15 +129,15 @@ CLASS lcl_reporter IMPLEMENTATION.
 ENDCLASS. 
 
 CLASS lcl_event_handler IMPLEMENTATION. 
-  METHOD if_event_handler~on_user_command. 
+  METHOD on_user_command. 
 
   ENDMETHOD. 
 
-  METHOD if_event_handler~on_double_click. 
+  METHOD on_double_click. 
 
   ENDMETHOD. 
 
-  METHOD if_event_handler~on_line_click. 
+  METHOD on_line_click. 
 
   ENDMETHOD. 
 ENDCLASS. 
