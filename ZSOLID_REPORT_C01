@@ -4,6 +4,11 @@
 CLASS lcl_reporter DEFINITION CREATE PRIVATE. 
   PUBLIC SECTION. 
     INTERFACES: if_reporter. 
+
+    ALIASES: at_selection_screen FOR if_reporter~at_selection_screen,
+             get_data FOR if_reporter~get_data,
+             get_screen FOR if_reporter~get_screen.
+
     CLASS-METHODS: 
       get_instance 
         RETURNING VALUE(return_object) TYPE REF TO cl_main. 
@@ -18,7 +23,11 @@ ENDCLASS.
 
 CLASS lcl_event_handler DEFINITION. 
   PUBLIC SECTION. 
-    INTERFACES: if_event_handler. 
+    INTERFACES: if_event_handler.
+
+    ALIASES: on_user_command FOR if_event_handler~on_user_command,
+             on_double_click FOR if_event_handler~on_double_click,
+             on_line_click FOR if_event_handler~on_line_click.
 ENDCLASS.
 
 
