@@ -134,10 +134,11 @@ CLASS lcl_event_handler IMPLEMENTATION.
   ENDMETHOD. 
 
   METHOD if_event_handler~on_double_click. 
-```
+
   ENDMETHOD. 
 
   METHOD if_event_handler~on_line_click. 
 
   ENDMETHOD. 
 ENDCLASS. 
+```
